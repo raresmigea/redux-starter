@@ -1,5 +1,5 @@
 import { toLower, wrap } from 'lodash';
-import { compose, pipe } from 'lodash/fp';
+import { pipe } from 'lodash/fp';
 
 let input = '      TeXt    ';
 let output = '<div>' + input.trim() + '</div>';
