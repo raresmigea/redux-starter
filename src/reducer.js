@@ -2,7 +2,7 @@
 
 let lastId = 0;
 
-function reducer(state = [], action) {
+export default function reducer(state = [], action) {
   // return a new state based on action
   if (action.type === 'bugAdded') {
     return [
