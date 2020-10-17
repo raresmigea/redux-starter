@@ -11,8 +11,23 @@ store.dispatch({
 });
 
 store.dispatch({
-  type: 'bugRemoved',
-  payload: { id: 1 },
+  type: 'bugAdded',
+  payload: {
+    description: 'Bug2',
+  },
 });
+
+store.dispatch({
+  type: 'bugAdded',
+  payload: {
+    description: 'Bug3',
+  },
+});
+
+store.dispatch({
+  type: 'bugRemoved',
+  payload: { id: 2 },
+});
+
 console.log('store ', store.getState());
 export default store;
