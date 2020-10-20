@@ -3,7 +3,7 @@ import reducer from './reducer';
 
 const store = createStore(reducer);
 
-store.subscribe(() => {
+const unsubsribe = store.subscribe(() => {
   console.log('state changed: ', store.getState());
 });
 
@@ -27,6 +27,8 @@ store.dispatch({
     description: 'Bug3',
   },
 });
+
+unsubsribe();
 
 store.dispatch({
   type: 'bugRemoved',
