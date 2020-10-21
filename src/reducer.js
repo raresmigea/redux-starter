@@ -18,6 +18,11 @@ export default function reducer(state = [], action) {
   } else if (action.type === actions.BUG_REMOVED) {
     // return all bugs but the bug with the given id
     return state.filter((bug) => bug.id !== action.payload.id);
+  } else if (action.type === actions.BUG_RESOLVED) {
+    // resolves a bug
+    return state.map((bug) =>
+      bug.id !== action.payload.id ? bug : { ...bug, resolved: true }
+    );
   }
 
   // if dispatch an action that doesn't exist - return current state
