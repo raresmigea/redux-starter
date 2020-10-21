@@ -9,9 +9,7 @@ const unsubsribe = store.subscribe(() => {
 });
 
 store.dispatch(bugAdded('Bug1'));
-
 store.dispatch(bugAdded('Bug2'));
-
 store.dispatch(bugAdded('Bug3'));
 
 unsubsribe();
