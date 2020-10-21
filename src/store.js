@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import reducer from './reducer';
-import { bugAdded } from './actions';
+import { bugAdded, bugRemoved } from './actions';
 
 const store = createStore(reducer);
 
@@ -14,10 +14,7 @@ store.dispatch(bugAdded('Bug3'));
 
 unsubsribe();
 
-store.dispatch({
-  type: actions.BUG_REMOVED,
-  payload: { id: 2 },
-});
+store.dispatch(bugRemoved(2));
 
 console.log('store ', store.getState());
 export default store;

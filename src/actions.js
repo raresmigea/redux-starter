@@ -8,3 +8,10 @@ export function bugAdded(description) {
     },
   };
 }
+
+export function bugRemoved(id) {
+  return {
+    type: actions.BUG_REMOVED,
+    payload: { id: 2 },
+  };
+}
