@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
 import reducer from './reducer';
+import * as actions from './actionTypes';
 
 const store = createStore(reducer);
 
@@ -8,21 +9,21 @@ const unsubsribe = store.subscribe(() => {
 });
 
 store.dispatch({
-  type: 'bugAdded',
+  type: actions.BUG_ADDED,
   payload: {
     description: 'Bug1',
   },
 });
 
 store.dispatch({
-  type: 'bugAdded',
+  type: actions.BUG_ADDED,
   payload: {
     description: 'Bug2',
   },
 });
 
 store.dispatch({
-  type: 'bugAdded',
+  type: actions.BUG_ADDED,
   payload: {
     description: 'Bug3',
   },
@@ -31,7 +32,7 @@ store.dispatch({
 unsubsribe();
 
 store.dispatch({
-  type: 'bugRemoved',
+  type: actions.BUG_REMOVED,
   payload: { id: 2 },
 });
 
