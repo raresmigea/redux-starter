@@ -17,5 +17,5 @@ unsubsribe();
 store.dispatch(bugRemoved(2));
 store.dispatch(bugResolved(1));
 
-console.log('store ', store.getState());
+console.log('store: ', store.getState());
 export default store;
