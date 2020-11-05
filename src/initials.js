@@ -1,4 +1,3 @@
-import { toLower, wrap } from 'lodash';
 import { pipe } from 'lodash/fp';
 
 let input = '      TeXt    ';
