@@ -1,6 +1,6 @@
 import { pipe } from 'lodash/fp';
 
-let input = '      TeXt    ';
+let input = ' TeXt    ';
 let output = '<div>' + input.trim() + '</div>';
 console.log('output: ', output);
 
