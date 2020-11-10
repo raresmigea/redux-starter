@@ -5,7 +5,7 @@ import { bugAdded, bugRemoved, bugResolved } from './actions';
 const store = createStore(reducer);
 
 const unsubsribe = store.subscribe(() => {
-  console.log('state changed: ', store.getState());
+  console.log('State changed: ', store.getState());
 });
 
 store.dispatch(bugAdded('Bug1'));
