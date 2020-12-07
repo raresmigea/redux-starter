@@ -8,9 +8,9 @@ const unsubsribe = store.subscribe(() => {
   console.log('State changed: ', store.getState());
 });
 
+store.dispatch(bugAdded('Bug0'));
 store.dispatch(bugAdded('Bug1'));
 store.dispatch(bugAdded('Bug2'));
-store.dispatch(bugAdded('Bug3'));
 
 unsubsribe();
 
