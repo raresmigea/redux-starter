@@ -2,7 +2,7 @@ import { pipe } from 'lodash/fp';
 
 let input = ' TeXt    ';
 let output = '<div>' + input.trim() + '</div>';
-console.log('Output: ', output);
+console.log('output: ', output);
 
 const trim = (str) => str.trim();
 const wraps = (type, str) => `<${type}>${str}</${type}>`;
