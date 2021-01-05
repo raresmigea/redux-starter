@@ -8,7 +8,7 @@ const trim = (str) => str.trim();
 const wraps = (type, str) => `<${type}>${str}</${type}>`;
 const toLowerCase = (str) => str.toLowerCase();
 
-// or use this function for composing the functions
+// Or use this function for composing the functions
 const transform = pipe(trim, wraps, toLowerCase);
 
 console.log('Transformed: ', transform(input));
