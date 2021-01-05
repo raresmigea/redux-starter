@@ -11,4 +11,4 @@ const toLowerCase = (str) => str.toLowerCase();
 // Or use this function for composing the functions
 const transform = pipe(trim, wraps, toLowerCase);
 
-console.log('Transformed: ', transform(input));
+console.log('transformed: ', transform(input));
