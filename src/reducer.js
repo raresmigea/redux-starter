@@ -1,7 +1,5 @@
 import * as actions from './actionTypes';
 
-// reducer is a function with 2 parameters: current state, action
-
 let lastId = 0;
 
 export default function reducer(state = [], action) {
